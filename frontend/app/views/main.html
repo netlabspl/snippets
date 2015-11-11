@@ -1,0 +1,8 @@
+<p><a class="btn btn-lg btn-success" ng-click="start()" ng-href="#/">Start fake request!</a></p>
+
+<div class="marketing" ng-repeat="snippet in topSnippets">
+  <h4>{{snippet.name}} <span>{{$index + 1}}</h4>
+  <p> {{snippet.description}}</p>
+  <div class="code" hljs hljs-source="snippet.source"> </div>
+  <hr>
+</div>
